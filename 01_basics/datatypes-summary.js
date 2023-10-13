@@ -38,7 +38,3 @@ const myFunc = function(){
 }
 
 console.log(typeof myFunc);
-
-
-
-
