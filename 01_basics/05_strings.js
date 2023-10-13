@@ -32,3 +32,4 @@ console.log(url.replace('%20','-'));
 console.log(url.includes('naveen'));
 
 console.log(gameName.split('-'));// converts string to array using given separator
+console.log(newString.normalize());
