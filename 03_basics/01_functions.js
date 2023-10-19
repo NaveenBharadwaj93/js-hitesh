@@ -42,7 +42,7 @@ function calculateCartPrice(num1){
 // console.log(calculateCartPrice(2,200,500));
 
 // use rest operator when we are not sure about number of arguements. rest and spread operators are same but names are taken 
-// based on where it is used
+// based on where it is used(Use case vise naming)
 // rest operator combines all the passed arguements and combines inside a package  
 
 // function calculateCartPrice(...num1){

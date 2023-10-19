@@ -43,6 +43,7 @@ jsUser.greetingTwo = function(){
     console.log(`Hello js user, ${this["full name"]}`); // To reference same object properties use 'this' call
 }
 
+console.log(Object.keys(jsUser));
 // console.log(jsUser.greeting);
 console.log(jsUser.greeting());
 console.log(jsUser.greetingTwo());
