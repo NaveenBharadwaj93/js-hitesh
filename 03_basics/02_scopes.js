@@ -7,8 +7,8 @@ if(true){
     const b = 20
     var c = 30
     console.log("Inner ",a,b);
-}
 
+}
 
 console.log(a);
 console.log(b);
