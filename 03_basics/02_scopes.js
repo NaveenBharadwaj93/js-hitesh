@@ -46,11 +46,12 @@ function add1(num) {
 }
 add1(5)
 
-addTwo()
+// addTwo() - gives error trying to access variable before initialization. 
+// This refers to hoisting. Hoisting defines where in the program function should be called.
 
 const addTwo = function (num) {
     return num + 2
 }
-
-console.log(add1())
-console.log(addTwo())
+addTwo()
+console.log(add1(5))
+console.log(addTwo(2))
