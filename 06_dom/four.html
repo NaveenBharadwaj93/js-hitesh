@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const newLi = document.createElement('li')
+        newLi.innerHTML = `${langName}`
+        const ul = document.querySelector('.language')
+        ul.appendChild(newLi)
+
+        // document.body.appendChild(ul)
+    }
+    addLanguage('python')
+    addLanguage('TypeScript')
+
+    function addOptimizeLanguage(langName){
+        const newLi = document.createElement('li'); 
+        // instead of using innerHTML use create text node so that
+        // full tree traversing is avoided internally
+        newLi.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(newLi)
+    }
+
+    addOptimizeLanguage('golang')
+
+    // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    // newLi.textContent = 'Mojo' // same as innerHTML
+    newLi.appendChild(document.createTextNode('Naveen'))
+    secondLang.replaceWith(newLi)
+
+    // Edit
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    // Remove
+    
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+
+</script>
+</html>
