@@ -29,7 +29,7 @@ const myCoding = [
     {
         languageName : "cpp",
         languageFileName : "c++"
-    },
+    }
 ]
 
 myCoding.forEach( (item) => {
