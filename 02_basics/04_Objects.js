@@ -39,7 +39,7 @@ const obj4 = {
 // Combine above objects inside a single object
 // const obj3 = {obj1,obj2} // It will create two individual objects inside single object.. So this is not right
 
-// const obj3 = Object.assign(obj1,obj2) // This will all the elements of two object under obj3. To confirm this is the operation
+// const obj3 = Object.assign(obj1,obj2) // This will add all the elements of two object under obj3. To confirm this is the operation
 // we are performing, it's good practice to add "{}" empty array as a first argument in Object.assign() function. {} becomes target and other 
 // parameters becomes source
 
