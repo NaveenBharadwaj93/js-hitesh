@@ -6,9 +6,14 @@ const fs = require("fs");
 //     }
 //     console.log("The file has been saved.");
 // })
-let readData;
-fs.readFile('message.txt','utf-8',(err,data)=>{
+
+// fs.writeFile('message.txt',`Data added`,(error)=>{
+//     if (error) throw error
+//     console.log("data added");
+// })
+
+fs.readFile('./message.txt','utf-8',(err,data)=>{
     if (err) throw err;
-    readData = data;
+    console.log(data);
 })
-console.log(readData);
+
